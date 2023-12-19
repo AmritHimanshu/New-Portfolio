@@ -1,0 +1,114 @@
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Typewriter from "typewriter-effect";
+import Header from './Header';
+import web from '../images/web.jpg';
+import illustration from '../images/illustration1.png'
+
+function FirstSection() {
+
+    const titleVariants = {
+        visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+        hidden: { opacity: 0, x: -300 }
+    };
+
+    const aboutVariants = {
+        visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+        hidden: { opacity: 0, x: -300 }
+    };
+
+    const skillVariants = {
+        visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+        hidden: { opacity: 0, scale: 0.2 }
+    };
+
+    const controls = useAnimation();
+
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+        else {
+            controls.start("hidden")
+        }
+    }, [controls, inView]);
+
+    return (
+        <div className='h-[100vh] cursor-default'>
+            <div className='h-[100vh]' style={{
+                backgroundImage: `url(${web})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center bottom',
+            }}>
+
+                <div className='h-[100vh] bg-black bg-opacity-70 flex flex-col items-center'>
+
+                    <div className='mt-[10px] w-full shadow-xl'>
+                        <Header />
+                    </div>
+
+                    <div className='my-36 h-full flex md:flex-col lg:flex-row items-center relative'>
+
+                        <div className={`text-center`} >
+
+                            <div className='pb-5 text-2xl sm:text-4xl md:text-6xl text-baby-green font-black tracking-wider leading-loose drop-shadow-[0_0_35px_rgba(85,171,111,0.8)] flex justify-center'>
+                                <span className='mr-6'>Hii, </span><span className=''>
+                                    <Typewriter
+                                        options={{
+                                            strings: ['This is Himanshu'],
+                                            autoStart: true,
+                                            loop: true,
+                                        }}
+                                    />
+                                </span>
+                            </div>
+
+                            <div className='text-sm sm:text-xl text-white tracking-wide leading-loose xl:w-[45vw]'>
+                                I am a Web-Developer and Coder...... Just following my passion...... Eager to learn new and interesting things.
+                            </div>
+
+                            <div className='flex flex-row items-center mt-10 w-[400px] mx-auto'>
+
+                                <div className='h-1 w-20 mx-2 border-2 border-baby-green bg-baby-green'></div>
+
+                                <div className='text-2xl text-white font-bold tracking-widest w-[205px] text-center'>
+                                    <Typewriter
+
+                                        onInit={(typewriter) => {
+
+                                            typewriter
+
+                                                .typeString("Welcomes You")
+
+                                                .pauseFor(1000)
+                                                .deleteAll()
+                                                .typeString("From India")
+                                                .start();
+                                        }}
+                                    />
+                                </div>
+
+                                <div className='h-1 w-20 mx-2 border-2 border-baby-green bg-baby-green'></div>
+
+                            </div>
+
+                        </div>
+
+                        <div className='md:pt-36'>
+                            <img src={illustration} alt="" className='w-[500px] animate-bounce' />
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    )
+}
+
+export default FirstSection
