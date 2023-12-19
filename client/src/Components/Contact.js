@@ -114,7 +114,7 @@ function Contact() {
                             </a>
                         </div>
                         <div>
-                            <a href="https://www.instagram.com/himanshu_heart_hacker_0/" target="_blank">
+                            <a href="https://www.instagram.com/himanshu_the_heart_hacker/" target="_blank">
                                 <InstagramIcon className='scale-150 mx-2 text-white hover:text-green-300 xl:scale-[2.5] hover:scale-[2] xl:hover:scale-[3] hover:cursor-pointer ' />
                             </a>
                         </div>
