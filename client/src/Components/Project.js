@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ProjectOption from './ProjectOption'
-import linkedin from '../images/linkedinPostPage.png';
-import institute from '../images/instituteHomePage.png';
+// import linkedin from '../images/linkedinPostPage.png';
+// import institute from '../images/instituteHomePage.png';
 
 function Project() {
 

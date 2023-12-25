@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import FirstSection from './Components/FirstSection';
 import About from './Components/About';
 import Skill from './Components/Skill';
