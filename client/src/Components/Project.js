@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ProjectOption from './ProjectOption'
@@ -26,7 +26,30 @@ function Project() {
 
     const [ref, inView] = useInView();
 
+    const [project, setProject] = useState();
+
+    const getProjects = async () => {
+        try {
+            const res = await fetch('/getProject', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            });
+
+            const data = await res.json();
+            console.log(data);
+            setProject(data);
+            
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     useEffect(() => {
+
+        getProjects();
+
         if (inView) {
             controls.start("visible");
         }
@@ -54,8 +77,13 @@ function Project() {
                     </div>
 
                     <motion.div ref={ref} animate={controls} initial="hidden" variants={popVariants} className='my-24 flex items-center justify-center flex-wrap sm:border-x-8 border-baby-green'>
-                        <ProjectOption image={linkedin} name="LinkedIn Clone" title="LinkedIn Clone" link="https://linkedin-clone-tv3p.vercel.app/" />
-                        <ProjectOption image={institute} name="Patna Science Academy" title="Patna Science Academy" link="https://patnascienceacademy.com/" />
+
+                        {project?.map((data, index) => (
+                            <ProjectOption key={data._id} image={data.image} name={data.name} title={data.name} link={data.link} />
+                        ))}
+
+                        {/* <ProjectOption image={linkedin} name="LinkedIn Clone" title="LinkedIn Clone" link="https://linkedin-clone-tv3p.vercel.app/" />
+                        <ProjectOption image={institute} name="Patna Science Academy" title="Patna Science Academy" link="https://patnascienceacademy.com/" /> */}
                     </motion.div>
                 </div>
             </div>

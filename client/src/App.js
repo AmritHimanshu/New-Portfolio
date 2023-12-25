@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FirstSection from './Components/FirstSection';
 import About from './Components/About';
 import Skill from './Components/Skill';
@@ -6,6 +6,7 @@ import Project from './Components/Project';
 import Contact from './Components/Contact';
 
 function App() {
+
   return (
     <div className=' h-screen w-screen overflow-x-hidden'>
 
