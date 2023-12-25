@@ -30,7 +30,7 @@ function Project() {
 
     const getProjects = async () => {
         try {
-            const res = await fetch('https://new-portfolio-api-three.vercel.app/getProject', {
+            const res = await fetch('/getProject', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
