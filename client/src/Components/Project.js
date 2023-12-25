@@ -79,7 +79,7 @@ function Project() {
                     <motion.div ref={ref} animate={controls} initial="hidden" variants={popVariants} className='my-24 flex items-center justify-center flex-wrap sm:border-x-8 border-baby-green'>
 
                         {project?.map((data, index) => (
-                            <ProjectOption key={data._id} image={data.image} name={data.name} title={data.name} link={data.link} />
+                            <ProjectOption key={data._id} image={data.image} name={data.name} link={data.link} />
                         ))}
 
                         {/* <ProjectOption image={linkedin} name="LinkedIn Clone" title="LinkedIn Clone" link="https://linkedin-clone-tv3p.vercel.app/" />

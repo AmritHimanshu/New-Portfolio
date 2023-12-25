@@ -2,7 +2,7 @@ import React from 'react'
 import computer from '../images/computerScreen1.png';
 import LinkIcon from '@mui/icons-material/Link';
 
-function ProjectOption({ image, name, title, link }) {
+function ProjectOption({ image, name, link }) {
   return (
     <div className='py-2 lg:m-2 flex flex-col items-center'>
 
