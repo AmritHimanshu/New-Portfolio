@@ -8,6 +8,10 @@ const Project = require('../model/projectSchema');
 //     res.status(200).send(req.rootProject);
 // });
 
+router.get('/', (req, res) => {
+    res.send("Hi I am from backend");
+})
+
 router.get('/getProject', async (req, res) => {
     try {
         const projects = await Project.find();
