@@ -38,7 +38,6 @@ function Project() {
             });
 
             const data = await res.json();
-            console.log(data);
             setProject(data);
             
         } catch (error) {
