@@ -59,7 +59,7 @@ function Project() {
 
     return (
         <>
-            <div id='project' className='2xl:h-screen bg-baby-green bg-opacity-30 border-2'>
+            <div id='project' className='2xl:h-scree bg-baby-green bg-opacity-30 border-2'>
                 <div className='px-5 sm:px-[30px] pt-[30px]'>
                     <div className='flex flex-col sm:flex-row justify-center sm:items-center'>
                         <motion.div ref={ref} animate={controls} initial="hidden" variants={leftVariants} className='sm:w-[500px]'>
