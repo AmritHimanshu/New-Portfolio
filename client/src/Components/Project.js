@@ -75,7 +75,7 @@ function Project() {
                         </motion.div>
                     </div>
 
-                    <motion.div ref={ref} animate={controls} initial="hidden" variants={popVariants} className='my-24 flex items-center justify-center flex-wrap sm:border-x-8 border-baby-green'>
+                    <motion.div className='my-24 flex items-center justify-center flex-wrap sm:border-x-8 border-baby-green'>
 
                         {project?.map((data, index) => (
                             <ProjectOption key={data._id} image={data.image} name={data.name} link={data.link} />
