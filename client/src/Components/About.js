@@ -59,7 +59,7 @@ function About() {
                             Inquisitive | Mysterious | SmartWorker | Tenacious
                         </p>
                         <motion.div ref={ref} animate={controls} initial="hidden" variants={skillVariants} className='text-[13px] sm:text-2xl text-white sm:tracking-wide sm:leading-loose'>
-                            Hii, I'm a WEB DEVELOPER and as well as a COMPETITIVE CODER. I have made many projects by using my skills which are mentioned below. I am a full stack developer and an enthusiastic coder.
+                            Enthusiastic web developer and coder, I excel in transforming concepts into digital reality with a passion for problem-solving. With a diverse portfolio showcasing expertise in e-commerce, user interfaces, and backend optimization, I thrive in challenging environments. A perpetual learner, I stay ahead in the dynamic tech landscape, embracing new languages and frameworks. Committed to innovation, I approach obstacles as opportunities for growth. Eager to contribute my skills to dynamic projects, I bring a relentless drive for excellence
                         </motion.div>
 
                         <motion.div ref={ref} animate={controls} initial="hidden" variants={titleVariants} className='text-baby-green cursor-default'>
