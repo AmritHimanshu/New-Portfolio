@@ -50,7 +50,7 @@ function About() {
                 </motion.div>
 
                 <div className='flex items-center justify-center'>
-                    <div className='w-auto h-auto max-h-[400px] max-w-[650px] px-10 space-y-1 lg:space-y-5'>
+                    <div className='w-auto h-auto max-h-[400px max-w-[950px] border-2 px-10 space-y-1 lg:space-y-5'>
 
                         <motion.div ref={ref} animate={controls} initial="hidden" variants={titleVariants} className='text-xl sm:text-3xl lg:text-5xl  font-semibold tracking-wider bg-gradient-to-r from-green-800 to-baby-green inline-block text-transparent bg-clip-text cursor-default'>About Me</motion.div>
 
