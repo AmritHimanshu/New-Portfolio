@@ -38,7 +38,7 @@ function Project() {
             });
 
             const data = await res.json();
-            setProject(data);
+            setProject(data.reverse());
             
         } catch (error) {
             console.log(error);
