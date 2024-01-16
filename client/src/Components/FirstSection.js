@@ -51,7 +51,7 @@ function FirstSection() {
                         <Header />
                     </div>
 
-                    <div className='my-36 h-full flex md:flex-col lg:flex-row items-center relative'>
+                    <div className='h-full flex md:flex-col lg:flex-row items-center relative'>
 
                         <div className={`text-center`} >
 
@@ -67,7 +67,7 @@ function FirstSection() {
                                 </span>
                             </div>
 
-                            <div className='text-sm sm:text-xl text-white tracking-wide leading-loose xl:w-[45vw]'>
+                            <div className='text-sm m-auto w-[320px] sm:w-auto sm:text-xl text-white tracking-wide leading-loose xl:w-[45vw]'>
                                 I am a Web-Developer and Coder...... Just following my passion...... Eager to learn new and interesting things.
                             </div>
 
