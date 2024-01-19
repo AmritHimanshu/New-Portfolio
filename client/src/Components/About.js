@@ -41,11 +41,11 @@ function About() {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center bottom',
         }}>
-            <div className='px-2 bg-black bg-opacity-60 h-full w-full flex flex-col lg:flex-row items-center justify-center space-y-10 sm:space-y-0 sm:justify-around'>
+            <div className='px-2 bg-black bg-opacity-60 h-full w-full flex flex-col lg:flex-row items-center justify-evenly space-y-10 sm:space-y-0 sm:justify-around'>
 
                 <motion.div ref={ref} animate={controls} initial="hidden" variants={skillVariants} className='flex items-center justify-center'>
                     <div className='flex items-center'>
-                        <img className='w-[150px] h-[200px] sm:w-[400px] sm:h-[450px] lg:w-[700px] lg:h-[700px] object-cover' src={himanshu} alt="" />
+                        <img className='w-[400px] h-[400px] sm:w-[450px] sm:h-[450px] lg:w-[700px] lg:h-[700px] object-cover' src={himanshu} alt="" />
                     </div>
                 </motion.div>
 
