@@ -45,7 +45,7 @@ function About() {
 
                 <motion.div ref={ref} animate={controls} initial="hidden" variants={skillVariants} className='flex items-center justify-center'>
                     <div className='flex items-center'>
-                        <img className='w-[150px] h-[200px] sm:w-[400px] sm:h-[450px] lg:w-[350px] lg:h-[400px] rounded-full object-cover' src={himanshu} alt="" />
+                        <img className='w-[150px] h-[200px] sm:w-[400px] sm:h-[450px] lg:w-[700px] lg:h-[700px] object-cover' src={himanshu} alt="" />
                     </div>
                 </motion.div>
 
