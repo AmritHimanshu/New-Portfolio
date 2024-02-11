@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import Header from './Header';
 import web from '../images/web.jpg';
 import illustration from '../images/illustration1.png'
+import Resume from '../Files/Himanshu_Resume.pdf';
 
 function FirstSection() {
 
@@ -51,7 +52,7 @@ function FirstSection() {
                         <Header />
                     </div>
 
-                    <div className='h-full flex md:flex-col lg:flex-row items-center relative'>
+                    <div className='h-full flex md:flex-col lg:flex-row items-center justify-center relative'>
 
                         <div className={`text-center`} >
 
@@ -96,9 +97,15 @@ function FirstSection() {
 
                             </div>
 
+                            <div className='mt-10 flex items-center justify-center'>
+                                <a href={Resume} download="Himanshu's Resume">
+                                    <div className='p-1 xl:px-3 xl:py-2 text-lg xl:text-xl border-4 border-baby-green bg-baby-green text-black font-bold hover:scale-105 hover:bg-neutral-900 hover:text-baby-green duration-300 rounded-lg xl:tracking-widest' title='Download Resume'>Download Resume</div>
+                                </a>
+                            </div>
+
                         </div>
 
-                        <div className='md:pt-36'>
+                        <div className='md:pt-36 hidden xl:block'>
                             <img src={illustration} alt="" className='w-[500px] animate-bounce' />
                         </div>
 
