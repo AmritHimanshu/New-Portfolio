@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 import Header from './Header';
 import web from '../images/web.jpg';
 import illustration from '../images/illustration1.png'
-import Resume from '../Files/Himanshu_Resume.pdf';
+import Resume from '../Files/Himanshu_smpl2_Resume.pdf';
 
 function FirstSection() {
 
