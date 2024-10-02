@@ -69,7 +69,7 @@ function FirstSection() {
                             </div>
 
                             <div className='text-sm m-auto w-[320px] sm:w-auto sm:text-xl text-white tracking-wide leading-loose xl:w-[45vw]'>
-                                // I am a Web-Developer and Coder...... Just following my passion...... Eager to learn new and interesting things.
+                                {/* I am a Web-Developer and Coder...... Just following my passion...... Eager to learn new and interesting things. */}
                                 Full-Stack Developer | Passionate about building modern web apps with React, Next.js, and Node.js. Exploring SQL, and TypeScript. Let's connect and create something amazing together!
                             </div>
 
